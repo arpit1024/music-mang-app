@@ -1,0 +1,17 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+nav {
+  background-color: black;
+  position: sticky;
+  top: 0;
+}
+nav > h1 {
+  font-family: cursive;
+  font-size: xx-large;
+  color: cadetblue;
+  cursor: pointer;
+  padding: 30px 0 20px 40px;
+  text-align: left;
+}

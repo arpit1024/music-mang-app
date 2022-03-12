@@ -1,0 +1,115 @@
+body {
+  background-color: #f6f6f6;
+}
+#poster {
+  background-image: url("http://hck.re/kWWxUI");
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  z-index: 1;
+}
+#poster:hover {
+  opacity: 0.9;
+  transition: 0.4s ease-in-out;
+}
+#exotic-song {
+  margin-top: 150px;
+  color: darkblue;
+  font-weight: bold;
+  font-size: xx-large;
+}
+#like-song {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 600;
+}
+.songs-container {
+  justify-content: center;
+  border: 0.5px solid lightcyan;
+  width: fit-content;
+  margin: auto;
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 30%);
+  grid-gap: 20px;
+  background-color: #fff;
+  margin-bottom: 50px;
+}
+.song-cont > div {
+  line-height: 30px;
+  background-color: #f6f6f7;
+  cursor: alias;
+}
+.song-cont > button {
+  background-color: coral;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 5px;
+}
+.song-cont :hover {
+  opacity: 0.8;
+  transition: 0.5s;
+  transform: scaleZ(5);
+  transform: scaleX(1.1);
+}
+#play-Btn {
+  width: 50%;
+  height: 30px;
+  color: #f6f6f6;
+}
+#play-Btn:hover {
+  color: green;
+}
+.song-cont > img {
+  width: 100%;
+}
+#stop-Btn {
+  height: 30px;
+  color: #f6f6f6;
+  width: 30%;
+}
+#stop-Btn:hover {
+  color: red;
+}
+audio {
+  margin-top: 10px;
+}
+#plyBtn,
+#stpBtn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: gray;
+}
+#plyBtn:hover {
+  color: pink;
+  transition: 0.2s;
+}
+#btn-container-poster {
+  display: flex;
+  font-weight: bold;
+  align-items: center;
+  margin-top: 80px;
+  padding-left: 50px;
+}
+#nxtBtn {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  margin: 5px;
+}
+@media screen and (max-width: 800px) {
+  .songs-container {
+    grid-template-columns: repeat(2, 47%);
+  }
+}
+@media screen and (max-width: 600px) {
+  .songs-container {
+    grid-template-columns: repeat(1, 90%);
+  }
+}
+@media screen and (min-width: 1500px) {
+  .songs-container {
+    grid-template-columns: repeat(4, 22%);
+  }
+}
